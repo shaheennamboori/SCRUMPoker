@@ -1,1 +1,23 @@
+@use '@fontsource/roboto';
+@use 'themes';
+@use 'variables';
+
 /* You can add global styles to this file, and also import other style files */
+body {
+    display: flex;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif !important;
+    background-color: variables.$primary-body-color;
+    color: variables.$primary-text-color;  /* All text in primary text color */
+}
+
+button {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.button-primary {
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+}

@@ -1,0 +1,19 @@
+@use '../variables';
+
+:host {
+    display: flex;
+    flex-grow: 1;
+
+    .theme-switcher{
+        position: absolute;
+        right: 5%;
+        top: 5%;
+        
+        padding: 10px;
+        border-radius: 50%;
+        max-width: 50px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        background-color: $bg-theme-switcher;
+        color: $text-theme-switcher;
+    }
+}

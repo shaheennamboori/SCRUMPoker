@@ -1,0 +1,14 @@
+:root {
+    &.light-mode{
+        --primary-body: #d8d6d6;
+        --primary-text: #000;
+        --bg-theme-switcher: #000;
+        --text-theme-switcher: #fff;
+    }
+    &.dark-mode{
+        --primary-body: #302f2f;
+        --primary-text: #fff;
+        --bg-theme-switcher: #fff;
+        --text-theme-switcher: #000;
+    }
+  }
