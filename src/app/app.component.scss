@@ -1,4 +1,4 @@
-@use '../variables';
+@use '../variables' as variables;
 
 :host {
     display: flex;
@@ -8,12 +8,12 @@
         position: absolute;
         right: 5%;
         top: 5%;
-        
+        cursor: default;
         padding: 10px;
         border-radius: 50%;
         max-width: 50px;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-        background-color: $bg-theme-switcher;
-        color: $text-theme-switcher;
+        background-color: variables.$bg-theme-switcher;
+        color: variables.$text-theme-switcher;
     }
 }
