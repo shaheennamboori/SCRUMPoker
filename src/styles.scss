@@ -1,14 +1,15 @@
 @use '@fontsource/roboto';
 @use 'themes';
-@use 'variables';
+@use 'variables' as *;
 
 /* You can add global styles to this file, and also import other style files */
 body {
     display: flex;
     height: 100vh;
     font-family: 'Roboto', sans-serif !important;
-    background: variables.$primary-body-color;
-    color: variables.$primary-text-color;  /* All text in primary text color */
+    background: $primary-body-color;
+    color: $primary-text-color;
+    /* All text in primary text color */
 }
 
 button {
@@ -23,10 +24,41 @@ button {
 }
 
 .glass-effect {
-    background: rgba(255,255,255,0.3);
-    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
-    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
     border-radius: 20px;
+}
+
+.glass-button {
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+.glass-panel {
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    color: #fff;
+}
+
+.transparent-input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #FFF;
 }

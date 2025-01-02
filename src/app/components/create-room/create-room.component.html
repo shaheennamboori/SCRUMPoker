@@ -1,13 +1,13 @@
-<div class="room-container glass-effect">
+<div class="room-container glass-panel">
     <div class="row-container">
         <label for="roomname">Room Name: </label>
-        <input type="text" name="roomname" id="" [formControl]="name" [placeholder]="'Enter a room name'">
+        <input class="transparent-input" type="text" name="roomname" id="" [formControl]="name" >
     </div>
     <div class="row-container">
         <label for="password">Password: </label>
-        <input type="password" name="password" id="" [formControl]="password" [placeholder]="'Enter a password'">
+        <input class="transparent-input" type="password" name="password" id="" [formControl]="password" >
     </div>
-    <button class="button-primary">
+    <button class="button-primary glass-button">
         Create
     </button>
 </div>

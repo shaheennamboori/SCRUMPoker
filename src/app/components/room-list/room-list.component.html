@@ -1,1 +1,18 @@
-<p>room-list works!</p>
+<div class="room-container glass-panel">
+    <div class="row-container">
+        <label for="roomname">Room Name: </label>
+        <input class="transparent-input" type="text" name="roomname" >
+    </div>
+    <div class="row-container">
+        <label for="password">Password: </label>
+        <input class="transparent-input" type="password" name="password" >
+    </div>
+    <button class="button-primary glass-button">
+        Join
+    </button>
+</div>
+<div>
+    <div *ngFor="let room of roomList">
+        {{room}}
+    </div>
+</div>

@@ -1,0 +1,33 @@
+@use 'variables' as *;
+
+:host {
+    margin: 50px;
+
+    .room-container{
+        min-width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px;
+
+        .row-container {
+            min-width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px;
+            label{
+                width: 30%;
+            }
+            input {
+                flex-grow: 1;
+                padding: 10px 5px;
+                color: $white;
+            }
+        }
+        .button-primary{
+            width: fit-content;
+
+        }
+    }
+}
