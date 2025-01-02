@@ -7,9 +7,11 @@ body {
     display: flex;
     height: 100vh;
     font-family: 'Roboto', sans-serif !important;
-    background: $primary-body-color;
+    background-image: url('../public/bg.png');
+    background-size: cover; /* Optional: Ensures the image covers the entire element */
+  background-position: center; /* Optional: Centers the image */
+  background-repeat: no-repeat; /* Optional: Prevents the image from repeating */
     color: $primary-text-color;
-    /* All text in primary text color */
 }
 
 button {
@@ -61,4 +63,9 @@ button {
     background: transparent;
     border: none;
     border-bottom: 1px solid #FFF;
+    outline: none;
+}
+
+.section-title{
+    font-size: 2em;
 }
